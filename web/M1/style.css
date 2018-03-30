@@ -1,0 +1,339 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-mar-2018, 14.27.38
+    Author     : davi
+*/
+
+*
+{
+    box-sizing: border-box; /*Facilita il calcolo delle dimensioni degli elementi*/
+}
+
+/* Regole per il body */
+body
+{
+    font-family:  "IBM Plex Sans Condensed", "Segoe UI", Palatino, serif;
+    background-image: url("backgroundrighe.jpg");
+    background-size: cover; /* Lo sfondo copre la pagina */
+    background-attachment: fixed; /* Dovrebbe evitare lo scrolling dello sfondo */
+}
+
+/* Sezione per gli h1, h2 e h3 */
+
+h1
+{
+    color: #7aa0c4;
+}
+
+h2
+{
+    font-size: 9pt;
+    font-style: italic;
+    text-decoration: underline;
+}
+h3
+{
+    padding-top: 2%;
+    margin-bottom: 2%;
+    margin-top: 0px;
+    font-size: 15pt;
+    
+}
+/* Sezione per header e cose contenute */
+
+header
+{
+    border-width: 2px;
+    border-right: transparent;
+    border-left: transparent;
+    border-style: solid;
+    height: 20%;
+    width:100%;
+}
+#logo
+{
+    position:relative; /*Non capisco perché relative */
+    height: 80px;
+}
+
+.imgLogo
+{
+    height: 100%; /*Per far in modo che l'immagine prenda tutto lo spazio dell'header (in realtà
+                  forse non serve a niente)*/
+}
+
+
+
+#titoloSito
+{
+    display: inline;
+    position: absolute;
+    float: right;
+    overflow: auto;
+}
+
+/*Sezione per la navbar */
+
+nav ul li:first-child /* Indica il primo elemento della lista che forma la nav*/
+{
+    position: relative;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right-width: 2px;
+    float:left;
+    width:20%;
+}
+
+#msgLogin
+
+{
+   font-style: italic;
+}
+
+nav ul li
+{
+    float:right;
+    padding:5px;
+    list-style: none;
+}
+nav ul li input 
+{
+    height: 50%;
+    width: 80%;
+}
+
+ul
+{
+    padding-left: 20px;
+}
+
+nav ul
+{
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    position:relative;
+    margin:0px;
+
+}
+
+nav
+{
+    position: relative;
+    background-color: #bdd7d6;
+    border-top-width: 0px;
+    border-bottom-width: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-style: solid;
+    float: left;
+    height: 10%;
+    width:100%;
+}
+
+/* Sezione per l'aside'*/
+
+
+aside
+{
+    border-style: solid;
+    float:left;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    width: 20%;
+}
+
+/* Notizia e main */
+
+main
+{
+    margin-top: 0px;
+    float:right;
+    width:80%;
+    height: 100%;
+    font-size: 12pt;
+}
+
+
+.imgConDidascalia
+{   
+    position:relative;
+    display: inline-block;
+    height: 20%;
+    width: 30%;
+    padding: 2%;
+    float: left;
+}
+
+.imgNotizia
+{
+    width: 100%;
+    padding: 1%;
+    float: left;
+}
+
+.firma /*Firma delle notizie */
+{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 9pt;
+}
+
+.didascalia
+{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+
+p
+{
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+    padding-top: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+} 
+
+.imgLogo
+{
+    height: 100%;
+}
+
+/* Tabelle */
+table 
+{
+    margin-top: 22px;
+    margin-left: 20%;
+    width: 80%;
+}
+
+table, tr, th, td /*Regole per il posizionamento della tabella */
+{
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: left;
+}
+
+th /* Regole per l'header delle tabelle */
+{
+    padding: 7px;
+    color: white;
+    background-color: #bdd7d6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pari /* Regole per le righe pari della tabella */ 
+
+{
+    background-color: #5d5d5d;
+}
+
+.dispari /* Regole per le righe dispari della tabella */
+{
+    background-color: #cdcdcd;
+}
+
+/*Form e label */
+
+.form
+{
+    position: relative;
+    margin-top: 2%;
+    padding: 2%;
+    border-style: solid;
+    border-width: 3px;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: left;
+    
+}
+/* Per fare in modo che il form si estenda al 100% del box, aggiunto "textArea"
+per fare in modo che anche l'area di testo di scriviArticolo segua le stesse regole*/
+form input, textArea
+{
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%
+}
+label
+
+{
+    width: 100%
+}
+
+#scriviArticolo
+
+{
+    margin-top: 10px;
+    text-align: center;
+    float: right;
+    width: 80%
+}
+
+input[type='checkbox']
+{
+    width: 10%;
+    display: inline;
+}
+ /*Link */
+ 
+ ul link
+ {
+     padding-top: 2px;
+     padding-bottom: 2px;
+ }
+ 
+a:visited 
+{
+    color: #5d4780;
+}
+
+a:active
+{
+    color: #173753;
+}
+
+a:link
+{
+    color: #34568f;
+}
+
+a:hover
+{
+    color: #2f425e;
+}
+
+/* input */
+
+input
+{
+    padding: 3px;
+}
+
+input:hover
+{
+    border-style: solid;
+}
+
+input:focus
+{
+    background-color: #dfdbe7;
+}
+
+

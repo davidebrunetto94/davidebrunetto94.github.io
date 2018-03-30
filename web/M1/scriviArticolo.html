@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Scrivi un articolo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Davide Brunetto">
+        <meta name="keywords" content="NOTIZIE, NEWS, BLOG, SITO">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        
+    </head>
+    
+    
+    <body>
+        
+        <header>
+            <div id="logo">
+                <img class="imgLogo" id="logo" title="logo" alt="logo del sito" src="logo.png">
+            <h1 id="titoloSito">
+                <a href="login.html">Sito di notizie </a>
+            </h1> 
+                
+            </div>
+        </header>
+        
+        
+        <nav>
+            <ul>
+                <li> <input type="text" value="Cerca"> </li>
+                <li id="msgLogin"> Ciao, Davide. </li> 
+                <li><a href="login.html"> Pagina di login </a> </li>
+                
+                <li><a href="articoli.html"> Articoli </a> </li>
+                <li><a href="notizia.html"> Notizia </a> </li>
+            </ul>
+            
+        </nav>
+        
+        
+        <aside>
+            <div id="categorieNews">
+                <h3> Categorie: </h3>
+                    <ul>
+                        <li> Politica </li>
+                        <li> Cronaca </li>
+                        <li> Tecnologia </li>
+                        <li> Sport </li>
+                        <li> Cultura </li>
+                    </ul>
+                </div>
+            <div id="autoriNews">
+                <h3>Autori:</h3>
+                <ul>
+                    <li>Tizio</li>
+                    <li>Caio</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- Creare un form per la scrittura di un articolo nella pagina scriviArticolo.html. Il form deve permettere di
+        inserire:
+        Un titolo
+        La data di pubblicazione
+        La URL dell’immagine descrittiva
+        La didascalia per l’immagine
+        Il testo dell’articolo
+        La selezione della categoria.
+        Utilizzate i tipi di input corretti. -->
+        <main>
+            <form action="scriviArticolo.html" method="post" id="scriviArticoloGrande" class="form">
+                <label for="titoloArticolo">Titolo articolo: </label>
+                <input type="text" name="titoloArticolo" id="nomeArticolo"/>
+
+                <label for="titoloArticolo">Data articolo: </label>
+                <input type="date" name="dataArticolo" id="date"/>
+
+                <label for="urlArticolo">Url immagine: </label>
+                <input type="url" name="urlImmagine" id="url"/>
+
+                <label for="didascaliaImmagine">Didascalia immagine: </label>
+                <input type="text" name="didascaliaIMmagine" id="didascaliaImmagine"/>
+
+                <label for="testoArticolo">Testo articolo: </label>
+                <textArea rows="5" cols="30"
+                          name="testoArticolo" id="testoArticolo">
+                </textarea>
+                
+                <label for="categoria" id="categoria">Categoria articolo: </label>
+                    <div>
+                    <input type="checkbox" name="categoria" value="Politica">
+                        Politica
+                        
+                    </div>
+                
+                    <div>
+                    <input type="checkbox" name="categoria" value="Politica">
+                        Politica
+                        
+                    </div>
+                
+                    <div>
+                    <input type="checkbox" name="categoria" value="Politica">
+                        Politica
+                        
+                    </div>
+                
+                    <div>
+                    <input type="checkbox" name="categoria" value="Politica">
+                        Politica
+                        
+                    </div>
+                    
+                    <div>
+                    <input type="checkbox" name="categoria" value="Politica">
+                        Politica
+                        
+                    </div>
+                
+                <input type="submit" value="invia" />
+  
+            </form>
+            
+            
+        </main>
+        
+    </body>
+</html>

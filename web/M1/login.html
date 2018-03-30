@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina di login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Davide Brunetto">
+        <meta name="keywords" content="NOTIZIE, NEWS, BLOG, SITO">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    
+    <body>
+        
+        <header>
+            <div id="logo">
+                <img class="imgLogo" id="logo" title="logo" alt="logo del sito" src="logo.png">
+            <h1 id="titoloSito">
+                <a href="login.html">Sito di notizie </a>
+            </h1> 
+                
+            </div>
+        </header>
+        
+        
+        <nav>
+            <ul>
+                <li> <input type="text" value="Cerca"> </li>
+                <li> Pagina di login </li>
+                
+                <li><a href="articoli.html"> Articoli </a> </li>
+                <li><a href="notizia.html"> Notizia </a> </li>
+            </ul>
+            
+        </nav>
+        
+        
+        <aside>
+            <div id="categorieNews">
+                <h3> Categorie: </h3>
+                    <ul>
+                        <li> Politica </li>
+                        <li> Cronaca </li>
+                        <li> Tecnologia </li>
+                        <li> Sport </li>
+                        <li> Cultura </li>
+                    </ul>
+                </div>
+            <div id="autoriNews">
+                <h3>Autori:</h3>
+                <ul>
+                    <li>Tizio</li>
+                    <li>Caio</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <main>
+            <form action="articoli.html" method="post" class="form">
+                <label for="login">Inserisci il tuo username</label>
+                <input type="text" name="nomeUtente" id="nomeUtente" />
+                <label for="pswd"> Inserisci la tua password</label>
+                <input type="password" name="pswd" id="pswd" value="default"/>
+                <input class="pulsante" type="submit" value="Login" />
+            </form>
+        </main>
+    </body>
+</html>
