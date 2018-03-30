@@ -1,4 +1,4 @@
-/*
+﻿/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -17,9 +17,10 @@ and open the template in the editor.
 body
 {
     font-family:  "IBM Plex Sans Condensed", "Segoe UI", Palatino, serif;
-    background: #b3ffab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b3ffab, #12fff7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b3ffab, #12fff7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Sezione per gli h1, h2 e h3 */
