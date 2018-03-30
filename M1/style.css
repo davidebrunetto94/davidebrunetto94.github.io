@@ -17,9 +17,9 @@ and open the template in the editor.
 body
 {
     font-family:  "IBM Plex Sans Condensed", "Segoe UI", Palatino, serif;
-    background-image: url("backgroundrighe.jpg");
-    background-size: cover; /* Lo sfondo copre la pagina */
-    background-attachment: fixed; /* Dovrebbe evitare lo scrolling dello sfondo */
+    background: #b3ffab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b3ffab, #12fff7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b3ffab, #12fff7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Sezione per gli h1, h2 e h3 */
