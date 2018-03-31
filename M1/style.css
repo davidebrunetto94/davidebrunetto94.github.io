@@ -1,4 +1,4 @@
-﻿/*
+/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -16,12 +16,11 @@ and open the template in the editor.
 /* Regole per il body */
 body
 {
-    font-family:  "IBM Plex Sans Condensed", "Segoe UI", Palatino, serif;
-    background: #24C6DC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    font-family:  "Oswald", "Segoe UI", Palatino, serif;
+   /* background-image: url("backgroundrighe.jpg");
+    background-size: cover; /* Lo sfondo copre la pagina 
+    background-attachment: fixed; /* Dovrebbe evitare lo scrolling dello sfondo */
+   background-color: #92a8ad;
 }
 
 /* Sezione per gli h1, h2 e h3 */
@@ -107,7 +106,7 @@ nav ul li
 nav ul li input 
 {
     height: 50%;
-    width: 80%;
+    width: 100%;
 }
 
 ul
@@ -152,6 +151,11 @@ aside
     border-right-width: 2px;
     border-left-width: 2px;
     width: 20%;
+}
+/*Nasconde l'aside' "mini" per la visualizzazione in 480px*/
+.visibileIn480
+{
+    display: none;
 }
 
 /* Notizia e main */
@@ -338,4 +342,99 @@ input:focus
     background-color: #dfdbe7;
 }
 
-
+@media only screen and (max-width: 480px)
+{
+    nav ul li:first-child
+    {
+        display: block;
+        width: 100%;
+        border-right:none;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+    
+    nav
+    {
+        border: none;
+        background-color: transparent;
+    }
+    
+    
+    nav ul li
+    {
+        border-bottom-style: solid;
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-width: 2px;
+        
+    }
+    .ultimo
+    {
+        border-bottom:solid;
+        border-bottom-width: 2px;
+    }
+    
+    header
+    {
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    aside
+    {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    h3
+    {
+        text-align: center;
+        display:block;
+        width: 100%;
+    }
+    
+    .visibileIn480
+    {
+        display: block;
+    }
+    
+    
+    .nascondi480
+    {
+        display: none;
+    }
+    
+    main
+    {
+        width: 100%;
+        float: none;
+    }
+    .form
+    {
+        margin: 5%;
+    }
+    
+    .imgConDidascalia
+    
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    table
+    {
+        margin: 5%;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    #scriviArticolo
+    {
+        width: 100%;
+    }
+    
+    
+}
