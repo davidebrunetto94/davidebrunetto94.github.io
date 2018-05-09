@@ -16,7 +16,7 @@ and open the template in the editor.
 /* Regole per il body */
 body
 {
-    font-family:  "Oswald", "Segoe UI", Palatino, serif;
+    font-family:  "IBM Plex Sans Condensed", "Segoe UI", Palatino, serif;
    /* background-image: url("backgroundrighe.jpg");
     background-size: cover; /* Lo sfondo copre la pagina 
     background-attachment: fixed; /* Dovrebbe evitare lo scrolling dello sfondo */
